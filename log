@@ -125,3 +125,30 @@ exercises.c:46:8: error: variable ‘newArr’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 7506404
+Thu 14 Mar 2024 08:57:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:33: error: expected expression before ‘int’
+   50 |       newSize = (int*)realloc((*int), sizeof(int) * newSize);
+      |                                 ^~~
+exercises.c:50:51: error: invalid operands to binary * (have ‘long unsigned int’ and ‘int *’)
+   50 |       newSize = (int*)realloc((*int), sizeof(int) * newSize);
+      |                                                   ^
+exercises.c:51:14: error: ‘j’ undeclared (first use in this function)
+   51 |       newArr[j] = arr[i];
+      |              ^
+exercises.c:51:14: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:57:3: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   57 |   return ;
+      |   ^~~~~~
+exercises.c:45:6: note: declared here
+   45 | int *filterEvenNumbers(int arr[], int size, int *newSize) {
+      |      ^~~~~~~~~~~~~~~~~
+exercises.c:46:8: error: variable ‘newArr’ set but not used [-Werror=unused-but-set-variable]
+   46 |   int *newArr = (int *)malloc(size * sizeof(int));
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d870d32

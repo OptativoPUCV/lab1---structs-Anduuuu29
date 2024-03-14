@@ -47,7 +47,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int talla_nueva = 0;
   for (int i = 0; i < size; i++){
     if(arr[i] % 2 == 0){
-      newSize = (int*)realloc((*newSize), sizeof(int) * newSize);
+      newSize = (int*)realloc((*int), sizeof(int) * newSize);
       newArr[j] = arr[i];
       talla_nueva++;
     }
