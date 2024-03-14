@@ -55,15 +55,7 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
-qsort()
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
-  int nuevaTalla = size1 + size2;
-  for(int i = 0; i < nuevaTalla; i++){
-    result[i] = arr1[i];
-    result[i + 1] = arr2[i];
-  }
-  return result;
-}
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {}
 
 
 /*
