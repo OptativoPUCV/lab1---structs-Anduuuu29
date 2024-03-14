@@ -21,3 +21,14 @@ exercises.c:14:7: error: variable ‘mayor’ set but not used [-Werror=unused-b
 cc1: all warnings being treated as errors
 Compilation failed
 0048365
+Thu 14 Mar 2024 08:40:58 PM UTC: 
+ exercises.c | 15 ++++++---------
+ 1 file changed, 6 insertions(+), 9 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:27:7: error: unused variable ‘temp’ [-Werror=unused-variable]
+   27 |   int temp;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1e43890
