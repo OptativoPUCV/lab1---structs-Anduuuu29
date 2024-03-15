@@ -86,16 +86,23 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) { 
   int i = 0;
+  int mayor = 0;
+  int menor = 0;
+  
   while(i < size)
     {
       if(arr[i] > arr[i + 1])
-        return 0;
+        menor++;
       else if(arr[i] < arr[i + 1])
-        return 1;
-      else
-        return -1;
+        mayor++;
       i++;
     }
+  if(mayor == size)
+    return 1;
+  else if(menor == size)
+    return -1;
+  else
+    return 0;
   return -2; 
 }
 
