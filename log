@@ -528,3 +528,20 @@ Fri 15 Mar 2024 07:50:27 PM UTC:
  tests:  0|5
 total_score: 20/70
 73a14f1
+Fri 15 Mar 2024 07:52:05 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:67:24: error: expected expression before ‘int’
+   67 |   reverseArray(result, int size3);)
+      |                        ^~~
+exercises.c:67:35: error: expected statement before ‘)’ token
+   67 |   reverseArray(result, int size3);)
+      |                                   ^
+exercises.c:61:7: error: unused variable ‘size3’ [-Werror=unused-variable]
+   61 |   int size3 = size1 + size2;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+db1c2bb
