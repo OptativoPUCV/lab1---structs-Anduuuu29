@@ -91,9 +91,9 @@ int checkSorted(int arr[], int size) {
   
   while(i < size)
     {
-      if(arr[i] > arr[i + 1])
+      if(arr[i] >= arr[i + 1])
         menor++;
-      else if(arr[i] < arr[i + 1])
+      else if(arr[i] <= arr[i + 1])
         mayor++;
       i++;
     }
