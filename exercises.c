@@ -132,7 +132,6 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   libro->anioPublicacion = anioPublicacion;
   
 }
-
 /*
 Ejercicio 7: Lista enlazada de números
 Descripción: Escribe una función que tome un arreglo de enteros y su tamaño, y
@@ -150,4 +149,7 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) {
+  
+  return NULL; 
+}
