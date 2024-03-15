@@ -97,8 +97,8 @@ int checkSorted(int arr[], int size) {
         mayor++;
       i++;
     }
-  if(mayor == size) return 1;
-  else if(menor == size) return -1;
+  if(mayor == size - 1) return 1;
+  else if(menor == size - 1 ) return -1;
   else return 0;
 }
 
