@@ -91,15 +91,20 @@ int checkSorted(int arr[], int size) {
   
   while(i < size - 1)
     {
-      if(arr[i] >= arr[i + 1])
-        menor++;
-      else if(arr[i] <= arr[i + 1])
+      if(arr[i] < arr[i + 1])
         mayor++;
+      else if(arr[i] > arr[i + 1])
+        menor++;
       i++;
     }
-  if(mayor == size - 1) return 1;
-  else if(menor == size - 1 ) return -1;
-  else return 0;
+  if(mayor == size - 1)
+    return 1;
+  else if(menor == size - 1)
+    return -1;
+  else
+    return 0;
+  
+
 }
 
 /*
