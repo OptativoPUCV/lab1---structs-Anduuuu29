@@ -652,3 +652,22 @@ exercises.c:61:19: error: expected ‘,’ or ‘;’ before ‘b’
       |                   ^
 Compilation failed
 bcdb02a
+Fri 15 Mar 2024 07:59:49 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘compare’:
+exercises.c:60:8: error: ‘a’ redeclared as different kind of symbol
+   60 |   int *a = (int*) a;
+      |        ^
+exercises.c:58:25: note: previous definition of ‘a’ with type ‘const void *’
+   58 | int compare(const void *a, const void *b)
+      |             ~~~~~~~~~~~~^
+exercises.c:61:8: error: ‘b’ redeclared as different kind of symbol
+   61 |   int *b = (int*) b;
+      |        ^
+exercises.c:58:40: note: previous definition of ‘b’ with type ‘const void *’
+   58 | int compare(const void *a, const void *b)
+      |                            ~~~~~~~~~~~~^
+Compilation failed
+db793a6

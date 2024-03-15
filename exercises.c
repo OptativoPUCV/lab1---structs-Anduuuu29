@@ -57,8 +57,8 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 int compare(const void *a, const void *b)
 {
-  int *a = (*int) a;
-  int *b = (*int) b;
+  int *a = (int*) a;
+  int *b = (int*) b;
 
   if(a < b) return 1;
   return 0;
