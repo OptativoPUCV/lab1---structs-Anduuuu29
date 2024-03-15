@@ -58,14 +58,19 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
   int i = 0, k = 0, j = 0;
+  int temp;
   int size3 = size1 + size2;
   while(i < size1 && j < size2)
     {
       result[k++] = arr1[i++];
       result[k++] = arr2[j++];
     }
-  reverseArray(result, int size3);
-
+  for(int i = 0; i < size3; i++)
+    {
+      temp = result[i];
+      result[i] = result[i - size3 - 1];
+      result[i - size3 - 1] = temp;
+    }
   
 }
 
