@@ -60,7 +60,7 @@ int compare(const void *a, const void *b)
   int *x = (int *)a;
   int *y = (int *)b;
 
-  if(a < b) return 1;
+  if(x < y) return 1;
   return 0;
   
 }

@@ -685,3 +685,9 @@ exercises.c:60:8: error: unused variable ‘x’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 62a1147
+Fri 15 Mar 2024 08:01:33 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 20/70
+c533889
