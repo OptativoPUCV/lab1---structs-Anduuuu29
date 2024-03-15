@@ -55,7 +55,15 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
+int *compare(const void *a, const void *b)
+{
+  int *a = (*int) a;
+  int *b = (*int) b;
 
+  if(a < b) return 1;
+  return 0;
+  
+}
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
   int i = 0, k = 0, j = 0;
   int temp;
@@ -65,12 +73,8 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
       result[k++] = arr1[i++];
       result[k++] = arr2[j++];
     }
-  for(int l = 0; l < size3/2; l++)
-    {
-      temp = result[l];
-      result[l] = result[i - size3 - 1];
-      result[l - size3 - 1] = temp;
-    }
+  qsort(result, size3, sizeof(int), compare);
+  
   
 }
 
