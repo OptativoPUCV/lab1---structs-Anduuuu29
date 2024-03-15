@@ -64,7 +64,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
       result[k++] = arr1[i++];
       result[k++] = arr2[j++];
     }
-  reverseArray(result, int size3);)
+  reverseArray(result, int size3);
 
   
 }

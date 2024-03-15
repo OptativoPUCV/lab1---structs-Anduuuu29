@@ -545,3 +545,17 @@ exercises.c:61:7: error: unused variable ‘size3’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 db1c2bb
+Fri 15 Mar 2024 07:52:14 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:67:24: error: expected expression before ‘int’
+   67 |   reverseArray(result, int size3);
+      |                        ^~~
+exercises.c:61:7: error: unused variable ‘size3’ [-Werror=unused-variable]
+   61 |   int size3 = size1 + size2;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+810932f
