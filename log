@@ -621,3 +621,34 @@ exercises.c:69:7: error: unused variable ‘temp’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 a3cc877
+Fri 15 Mar 2024 07:59:35 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘compare’:
+exercises.c:60:8: error: ‘a’ redeclared as different kind of symbol
+   60 |   int *a = (*int) a;
+      |        ^
+exercises.c:58:25: note: previous definition of ‘a’ with type ‘const void *’
+   58 | int compare(const void *a, const void *b)
+      |             ~~~~~~~~~~~~^
+exercises.c:60:14: error: expected expression before ‘int’
+   60 |   int *a = (*int) a;
+      |              ^~~
+exercises.c:60:19: error: expected ‘,’ or ‘;’ before ‘a’
+   60 |   int *a = (*int) a;
+      |                   ^
+exercises.c:61:8: error: ‘b’ redeclared as different kind of symbol
+   61 |   int *b = (*int) b;
+      |        ^
+exercises.c:58:40: note: previous definition of ‘b’ with type ‘const void *’
+   58 | int compare(const void *a, const void *b)
+      |                            ~~~~~~~~~~~~^
+exercises.c:61:14: error: expected expression before ‘int’
+   61 |   int *b = (*int) b;
+      |              ^~~
+exercises.c:61:19: error: expected ‘,’ or ‘;’ before ‘b’
+   61 |   int *b = (*int) b;
+      |                   ^
+Compilation failed
+bcdb02a
