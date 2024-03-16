@@ -1023,3 +1023,13 @@ exercises.c:160:47: error: control reaches end of non-void function [-Werror=ret
 cc1: all warnings being treated as errors
 Compilation failed
 7efa111
+Sat 16 Mar 2024 03:36:29 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:160:59: error: expected ‘;’ before ‘}’ token
+  160 | Nodo *crearListaEnlazada(int arr[], int size){ return NULL}
+      |                                                           ^
+Compilation failed
+263e113
