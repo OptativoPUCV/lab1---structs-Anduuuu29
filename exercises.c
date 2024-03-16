@@ -44,12 +44,12 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int talla = 0;
-  int *newArr;
+  int *newArr = malloc(sizeof(int) * talla);
   for(int i = 0; i < size; i++)
     {
       if(arr[i] % 2 == 0)
       {
-        *newArr = realloc(newArr, sizeof(int) * talla + 1);
+        newArr = realloc(newArr, sizeof(int) * talla + 1);
         newArr[talla] = arr[i];
         talla++;
       }
