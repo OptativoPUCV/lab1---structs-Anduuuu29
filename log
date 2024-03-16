@@ -1104,3 +1104,14 @@ Sat 16 Mar 2024 03:37:49 AM UTC:
  tests:  0|2
 total_score: 50/70
 db112b6
+Sat 16 Mar 2024 04:48:25 PM UTC: 
+ exercises.c | 18 ++++++++++++++++--
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:23: error: ‘newArr’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   52 |         int *newArr = realloc(newArr, sizeof(int) * (talla + 1));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+003b9c9
