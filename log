@@ -1223,3 +1223,17 @@ exercises.c:46:38: error: ‘talla’ undeclared (first use in this function)
 exercises.c:46:38: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 557ce5c
+Sat 16 Mar 2024 05:42:48 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:7: error: unused variable ‘pos’ [-Werror=unused-variable]
+   47 |   int pos = 0;
+      |       ^~~
+exercises.c:59:10: error: ‘newArr’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   59 |   return newArr;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a716e00
