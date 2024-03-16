@@ -1198,3 +1198,17 @@ exercises.c:47:17: note: referencing an object of size 0 allocated by ‘malloc�
 cc1: all warnings being treated as errors
 Compilation failed
 74b03a1
+Sat 16 Mar 2024 05:33:27 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:15: error: array subscript [-2305843009213693952, 2305843009213693951] is outside array bounds of ‘int[0]’ [-Werror=array-bounds]
+   53 |         newArr[talla] = arr[i];
+      |         ~~~~~~^~~~~~~
+exercises.c:47:17: note: referencing an object of size 0 allocated by ‘malloc’
+   47 |   int *newArr = malloc(sizeof(int) * talla);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2cf5d55
