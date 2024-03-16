@@ -1175,3 +1175,26 @@ exercises.c:52:23: error: ‘newArr’ may be used uninitialized in this functio
 cc1: all warnings being treated as errors
 Compilation failed
 7f50b18
+Sat 16 Mar 2024 04:53:18 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:17: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   52 |         *newArr = realloc(newArr, sizeof(int) * (talla + 1));
+      |                 ^
+exercises.c:52:9: error: array subscript 0 is outside array bounds of ‘int[0]’ [-Werror=array-bounds]
+   52 |         *newArr = realloc(newArr, sizeof(int) * (talla + 1));
+      |         ^~~~~~~
+exercises.c:47:17: note: referencing an object of size 0 allocated by ‘malloc’
+   47 |   int *newArr = malloc(sizeof(int) * talla);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:54:15: error: array subscript [-2305843009213693952, 2305843009213693951] is outside array bounds of ‘int[0]’ [-Werror=array-bounds]
+   54 |         newArr[talla] = arr[i];
+      |         ~~~~~~^~~~~~~
+exercises.c:47:17: note: referencing an object of size 0 allocated by ‘malloc’
+   47 |   int *newArr = malloc(sizeof(int) * talla);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+74b03a1
