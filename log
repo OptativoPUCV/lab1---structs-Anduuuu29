@@ -828,3 +828,14 @@ exercises.c:156:38: error: unused variable ‘actual’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 1197f3e
+Sat 16 Mar 2024 03:35:04 AM UTC: 
+ exercises.c | 25 ++++++++++++-------------
+ 1 file changed, 12 insertions(+), 13 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:165:2: error: control reaches end of non-void function [-Werror=return-type]
+  165 | {}
+      |  ^
+cc1: all warnings being treated as errors
+Compilation failed
+f2ed224

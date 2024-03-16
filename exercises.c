@@ -44,10 +44,20 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
   int *newArr = (int *)malloc(size * sizeof(int));
+  int contador = 0;
+  for (int i = 0; i < size; i++)
+    {
+      if(arr[i] % 2 == 0)
+      {
+        newArr[contador] = arr[i];
+        contador++;
+      }
+      
+    }
+  *newSize = contador;
+  return newArr;
   
-
   
-  return NULL; 
 
 }
 
@@ -152,15 +162,4 @@ typedef struct nodo {
 } Nodo;
 
 Nodo *crearListaEnlazada(int arr[], int size) 
-{
-  Nodo *lista = NULL, *temp = NULL, *actual = NULL;
-  for(int i = 0; i < size; i++)
-  {
-    temp = (Nodo *)malloc(sizeof(Nodo));
-    temp->numero = arr[i];
-    temp->siguiente = NULL;
-    if(lista == NULL) 
-  }
-  
-  return NULL; 
-}
+{}
