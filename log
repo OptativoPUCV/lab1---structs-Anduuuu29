@@ -1212,3 +1212,14 @@ exercises.c:47:17: note: referencing an object of size 0 allocated by ‘malloc�
 cc1: all warnings being treated as errors
 Compilation failed
 2cf5d55
+Sat 16 Mar 2024 05:35:35 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:46:38: error: ‘talla’ undeclared (first use in this function)
+   46 |   int *newArr = malloc(sizeof(int) * talla);
+      |                                      ^~~~~
+exercises.c:46:38: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+557ce5c
