@@ -56,7 +56,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     }
   
   *newSize = talla;
-  return newArr;
+  return *newArr;
 }
   
 
