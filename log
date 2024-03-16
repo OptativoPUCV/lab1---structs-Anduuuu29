@@ -1164,3 +1164,14 @@ exercises.c:47:17: note: referencing an object of size 0 allocated by ‘malloc�
 cc1: all warnings being treated as errors
 Compilation failed
 8fbc4e1
+Sat 16 Mar 2024 04:53:11 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:23: error: ‘newArr’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   52 |         int *newArr = realloc(newArr, sizeof(int) * (talla + 1));
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7f50b18
