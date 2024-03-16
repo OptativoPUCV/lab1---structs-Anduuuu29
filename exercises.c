@@ -52,7 +52,6 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
         newArr[contador] = arr[i];
         contador++;
       }
-      
     }
   *newSize = contador;
   return newArr;
@@ -158,4 +157,4 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size)
+Nodo *crearListaEnlazada(int arr[], int size){}
