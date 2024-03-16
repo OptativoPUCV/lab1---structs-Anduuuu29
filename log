@@ -1273,3 +1273,17 @@ exercises.c:59:10: error: ‘newArr’ may be used uninitialized in this functio
 cc1: all warnings being treated as errors
 Compilation failed
 784c26a
+Sat 16 Mar 2024 05:43:34 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:17: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   52 |         *newArr = realloc(newArr, sizeof(int) * talla + 1);
+      |                 ^
+exercises.c:59:10: error: ‘newArr’ is used uninitialized [-Werror=uninitialized]
+   59 |   return newArr;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f904457
