@@ -42,7 +42,9 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+int *filterEvenNumbers(int arr[], int size, int *newSize) {
+  int *newArr = (int *)malloc(size * sizeof(int));
+  
 
   
   return NULL; 
@@ -154,12 +156,10 @@ Nodo *crearListaEnlazada(int arr[], int size)
   Nodo *lista = NULL, *temp = NULL, *actual = NULL;
   for(int i = 0; i < size; i++)
   {
-    temp = (Nodo*)malloc(sizeof(Nodo));
+    temp = (Nodo *)malloc(sizeof(Nodo));
     temp->numero = arr[i];
     temp->siguiente = NULL;
-    if(lista == NULL) lista = temp;
-    else actual->siguiente = temp;
-    actual = temp;
+    if(lista == NULL) 
   }
   
   return NULL; 

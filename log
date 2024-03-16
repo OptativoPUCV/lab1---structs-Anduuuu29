@@ -810,3 +810,21 @@ Fri 15 Mar 2024 10:02:14 PM UTC:
  tests:  0|2
 total_score: 50/70
 f550b44
+Sat 16 Mar 2024 03:33:56 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:46:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
+   46 |   int *newArr = (int *)malloc(size * sizeof(int));
+      |        ^~~~~~
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:163:3: error: expected expression before ‘}’ token
+  163 |   }
+      |   ^
+exercises.c:156:38: error: unused variable ‘actual’ [-Werror=unused-variable]
+  156 |   Nodo *lista = NULL, *temp = NULL, *actual = NULL;
+      |                                      ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1197f3e
